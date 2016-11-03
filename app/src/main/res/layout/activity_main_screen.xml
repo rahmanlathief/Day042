@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.rahmanlathief.day04.MainScreen"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="100dp"
+        android:text="HEHE!"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:textSize="30dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:hint="username" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:textSize="30dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:hint="password" />
+
+    </LinearLayout>
+
+       <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login"
+            android:text="Login"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_gravity="center_horizontal"
+           android:elevation="0dp" />
+
+</LinearLayout>
